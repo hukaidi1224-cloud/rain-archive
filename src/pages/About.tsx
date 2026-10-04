@@ -62,6 +62,20 @@ export default function About() {
         </p>
       </div>
 
+      <div className="mt-10 border border-border/60 bg-background/40 px-6 py-5">
+        <p className="font-doc text-[14px] leading-[2] tracking-[0.08em] text-foreground/80">
+          作者：胡凯迪<span className="text-muted-foreground">（系统策划 / 世界观策划）</span>
+        </p>
+        <a
+          href="https://hukaidi1224-cloud.github.io/portfolio/"
+          target="_blank"
+          rel="noreferrer"
+          className="font-doc mt-1 inline-block text-[13px] tracking-[0.25em] text-primary transition-colors hover:text-foreground"
+        >
+          更多作品 → 个人作品集
+        </a>
+      </div>
+
       <div className="mt-12 flex flex-wrap gap-4">
         <Link
           to="/archive"
