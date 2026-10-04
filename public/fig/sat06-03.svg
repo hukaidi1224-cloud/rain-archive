@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none" stroke="#232a27" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 撕下的名牌 -->
+  <g transform="rotate(-14 108 66)">
+    <rect x="78" y="48" width="62" height="38"/>
+    <path d="M78 48 l11 7 l-11 7"/>
+    <path d="M94 66 q8 -7 15 0 q7 7 14 0" stroke-width="2.2"/>
+  </g>
+  <!-- 下落的名字 -->
+  <g stroke-width="2.6">
+    <line x1="138" y1="100" x2="134" y2="122"/>
+    <line x1="156" y1="116" x2="151" y2="142"/>
+    <line x1="174" y1="138" x2="168" y2="168"/>
+    <line x1="192" y1="164" x2="185" y2="198"/>
+    <circle cx="205" cy="208" r="2.2" fill="#232a27" stroke="none"/>
+    <circle cx="160" cy="196" r="2.2" fill="#232a27" stroke="none"/>
+  </g>
+  <!-- 斜雨 -->
+  <g stroke-width="2.4">
+    <line x1="60" y1="60" x2="44" y2="96"/>
+    <line x1="100" y1="36" x2="84" y2="72"/>
+    <line x1="250" y1="50" x2="234" y2="86"/>
+    <line x1="300" y1="34" x2="284" y2="70"/>
+    <line x1="348" y1="66" x2="332" y2="102"/>
+    <line x1="376" y1="110" x2="360" y2="146"/>
+    <line x1="60" y1="150" x2="46" y2="184"/>
+    <line x1="356" y1="170" x2="342" y2="204"/>
+  </g>
+  <!-- 海 -->
+  <path d="M36 254 q20 -13 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+  <path d="M60 270 q20 -11 40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke-width="2.4"/>
+  <!-- 逆势的浪头 -->
+  <path d="M120 254 q12 -26 38 -22" stroke-width="2.8"/>
+  <!-- 浮标 -->
+  <circle cx="304" cy="230" r="12"/>
+  <line x1="304" y1="218" x2="304" y2="198"/>
+  <path d="M296 198 L312 198 L304 184 Z"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 330" fill="none" stroke="#232a27" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 四格告示 -->
+  <rect x="30" y="24" width="160" height="128"/>
+  <rect x="210" y="24" width="160" height="128"/>
+  <rect x="30" y="178" width="160" height="128"/>
+  <rect x="210" y="178" width="160" height="128"/>
+  <!-- 格一：伞，禁止 -->
+  <path d="M70 96 q30 -34 60 0" stroke-width="2.8"/>
+  <line x1="100" y1="62" x2="100" y2="128" stroke-width="2.8"/>
+  <path d="M100 128 q0 10 -10 10 q-8 0 -8 -8" stroke-width="2.8"/>
+  <line x1="70" y1="78" x2="100" y2="62" stroke-width="2"/>
+  <line x1="130" y1="78" x2="100" y2="62" stroke-width="2"/>
+  <line x1="44" y1="40" x2="176" y2="136" stroke-width="3.4"/>
+  <line x1="176" y1="40" x2="44" y2="136" stroke-width="3.4"/>
+  <!-- 格二：说话，禁止 -->
+  <ellipse cx="290" cy="82" rx="34" ry="22" stroke-width="2.8"/>
+  <path d="M278 103 L266 120 L294 105" stroke-width="2.4"/>
+  <path d="M268 76 q8 -8 16 0 q8 8 16 0" stroke-width="2.2"/>
+  <path d="M272 92 q9 -6 18 0" stroke-width="2.2"/>
+  <line x1="226" y1="40" x2="354" y2="136" stroke-width="3.4"/>
+  <line x1="354" y1="40" x2="226" y2="136" stroke-width="3.4"/>
+  <!-- 格三：屋内，可以 -->
+  <path d="M46 232 L110 192 L174 232" stroke-width="2.8"/>
+  <rect x="58" y="232" width="104" height="56" stroke-width="2.8"/>
+  <rect x="94" y="248" width="32" height="40" stroke-width="2.4"/>
+  <circle cx="110" cy="216" r="7"/>
+  <line x1="110" y1="223" x2="110" y2="240" stroke-width="2.4"/>
+  <path d="M140 262 l10 12 l20 -26" stroke-width="3.6"/>
+  <!-- 格四：写字，禁止 -->
+  <line x1="236" y1="212" x2="300" y2="192" stroke-width="2.8"/>
+  <line x1="244" y1="224" x2="308" y2="204" stroke-width="2.8"/>
+  <line x1="252" y1="204" x2="316" y2="184" stroke-width="2.8"/>
+  <path d="M236 212 L220 228 M244 224 L228 240" stroke-width="2.4"/>
+  <line x1="226" y1="194" x2="354" y2="290" stroke-width="3.4"/>
+  <line x1="354" y1="194" x2="226" y2="290" stroke-width="3.4"/>
+</svg>

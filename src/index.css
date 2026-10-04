@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 雨夜档案 · 配色（参考：雨夜街灯 / 霉斑 / 钠灯 / 湿纸） */
+    --background: 165 14% 5%;        /* 近黑墨绿 #0b100f */
+    --foreground: 96 9% 80%;         /* 苔灰白 #cfd6cd */
+    --card: 160 12% 8%;
+    --card-foreground: 96 9% 80%;
+    --popover: 160 12% 8%;
+    --popover-foreground: 96 9% 80%;
+    --primary: 38 62% 55%;           /* 钠灯琥珀 #d9a441 */
+    --primary-foreground: 160 14% 6%;
+    --secondary: 160 10% 13%;
+    --secondary-foreground: 96 9% 80%;
+    --muted: 160 8% 15%;
+    --muted-foreground: 110 6% 52%;  /* 雾绿 #7a857c */
+    --accent: 84 16% 47%;            /* 霉绿 #7d9063 */
+    --accent-foreground: 90 20% 92%;
+    --destructive: 4 55% 44%;        /* 印章绛红 #b3372f */
+    --destructive-foreground: 40 40% 92%;
+    --border: 150 8% 18%;
+    --input: 150 8% 18%;
+    --ring: 38 62% 55%;
+    --radius: 0.25rem;
+    --sidebar-background: 165 14% 5%;
+    --sidebar-foreground: 96 9% 80%;
+    --sidebar-primary: 38 62% 55%;
+    --sidebar-primary-foreground: 160 14% 6%;
+    --sidebar-accent: 160 10% 13%;
+    --sidebar-accent-foreground: 96 9% 80%;
+    --sidebar-border: 150 8% 18%;
+    --sidebar-ring: 38 62% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", -apple-system, "Segoe UI", sans-serif;
+    background-image:
+      radial-gradient(1200px 600px at 85% -10%, hsl(160 20% 10% / 0.9), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, hsl(150 18% 9% / 0.8), transparent 55%);
+    background-attachment: fixed;
+  }
+  ::selection {
+    background: hsl(38 62% 55% / 0.85);
+    color: hsl(160 14% 6%);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(165 14% 5%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(150 8% 20%);
+    border: 2px solid hsl(165 14% 5%);
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  /* 文档宋体：档案正文字体 */
+  .font-doc {
+    font-family: "Songti SC", "STSong", "STZhongsong", "SimSun", serif;
+  }
+  /* 等宽：编号、元信息 */
+  .font-code {
+    font-family: "Courier New", "Nimbus Mono PS", "PingFang SC", monospace;
+    letter-spacing: 0.02em;
+  }
+
+  /* 湿纸文档底 */
+  .paper {
+    background-color: #e7dfca;
+    color: #23281f;
+    background-image:
+      radial-gradient(420px 300px at 12% 8%, rgba(96, 84, 52, 0.14), transparent 60%),
+      radial-gradient(560px 380px at 88% 30%, rgba(74, 88, 58, 0.13), transparent 65%),
+      radial-gradient(700px 500px at 30% 95%, rgba(60, 66, 44, 0.16), transparent 60%),
+      radial-gradient(3px 3px at 22% 30%, rgba(70, 60, 40, 0.35), transparent 60%),
+      radial-gradient(2px 2px at 68% 64%, rgba(70, 60, 40, 0.3), transparent 60%),
+      radial-gradient(2.5px 2.5px at 85% 82%, rgba(70, 60, 40, 0.28), transparent 60%);
+  }
+
+  /* 印章 */
+  .stamp {
+    display: inline-block;
+    padding: 0.35em 0.9em;
+    border: 3px double currentColor;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    text-indent: 0.35em;
+    transform: rotate(-4deg);
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+  }
+
+  /* 涂黑条 */
+  .redact {
+    background: #1a1d18;
+    color: transparent;
+    border-radius: 1px;
+    padding: 0 0.3em;
+    user-select: none;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  /* 纸面分隔线 */
+  .rule-dotted {
+    background-image: linear-gradient(to right, currentColor 25%, transparent 0%);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    height: 1px;
+    opacity: 0.35;
+  }
+
+  /* 滴水标题下划线 */
+  .drip-line {
+    background-image: linear-gradient(to right, hsl(38 62% 55% / 0.9), hsl(38 62% 55% / 0.05));
+    height: 1px;
+  }
+
+  /* 冷灰影印件（生存指南用） */
+  .paper-cold {
+    background-color: #dde1d9;
+    color: #1d2422;
+    background-image:
+      radial-gradient(500px 320px at 85% 10%, rgba(74, 90, 82, 0.12), transparent 60%),
+      radial-gradient(620px 400px at 8% 88%, rgba(74, 90, 82, 0.14), transparent 65%),
+      repeating-linear-gradient(0deg, transparent 0 3px, rgba(60, 74, 66, 0.025) 3px 4px);
+  }
+
+  /* 条形码装饰 */
+  .barcode {
+    background-image: repeating-linear-gradient(
+      90deg,
+      currentColor 0 2px, transparent 2px 4px,
+      currentColor 4px 7px, transparent 7px 9px,
+      currentColor 9px 10px, transparent 10px 14px,
+      currentColor 14px 15px, transparent 15px 18px
+    );
+    height: 34px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .writing-vertical {
+    writing-mode: vertical-rl;
+  }
+}
+
+/* 胶片颗粒（固定视口，无交互） */
+.grain-overlay {
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
+  animation: grain-jitter 0.9s steps(4) infinite;
+}
+
+@keyframes grain-jitter {
+  0% { background-position: 0 0; }
+  25% { background-position: -60px 40px; }
+  50% { background-position: 40px -70px; }
+  75% { background-position: -30px -30px; }
+  100% { background-position: 0 0; }
+}
+
+/* 四角暗角 */
+.vignette {
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(3, 6, 5, 0.55) 100%);
+}
+
+/* 霓虹闪烁（标题用，克制） */
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.55; }
+  94% { opacity: 1; }
+  96% { opacity: 0.7; }
+  97% { opacity: 1; }
+}
+.neon-flicker {
+  animation: neon-flicker 7s linear infinite;
+}
+
+/* 雨珠沿玻璃滑落的容器（备用装饰） */
+.rain-glass {
+  backdrop-filter: blur(1.5px) saturate(0.9);
+}

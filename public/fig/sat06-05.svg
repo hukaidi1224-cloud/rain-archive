@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none" stroke="#232a27" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 风杯风速计 -->
+  <line x1="92" y1="278" x2="92" y2="118"/>
+  <line x1="92" y1="118" x2="62" y2="96"/>
+  <line x1="92" y1="118" x2="122" y2="96"/>
+  <line x1="92" y1="118" x2="92" y2="86"/>
+  <circle cx="58" cy="92" r="9"/>
+  <circle cx="126" cy="92" r="9"/>
+  <circle cx="92" cy="78" r="9"/>
+  <!-- 反转的转动箭头 -->
+  <path d="M118 128 a30 30 0 0 0 -34 12" stroke-width="2.4"/>
+  <path d="M84 140 l-6 12 l14 -2" stroke-width="2.4"/>
+  <!-- 雨量筒（空的） -->
+  <line x1="232" y1="278" x2="232" y2="146"/>
+  <rect x="214" y="146" width="36" height="58"/>
+  <line x1="220" y1="192" x2="244" y2="192" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- 涨水的街面 -->
+  <path d="M20 262 q16 -10 32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0" stroke-width="2.8"/>
+  <path d="M44 276 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0" stroke-width="2.2"/>
+  <!-- 水位高过雨量筒底座 -->
+  <path d="M196 240 q12 -12 24 0 t24 0" stroke-width="2.4"/>
+  <!-- 墙上的日历，纸页飞走 -->
+  <rect x="300" y="48" width="76" height="86"/>
+  <circle cx="314" cy="48" r="3" fill="#232a27" stroke="none"/>
+  <circle cx="338" cy="48" r="3" fill="#232a27" stroke="none"/>
+  <circle cx="362" cy="48" r="3" fill="#232a27" stroke="none"/>
+  <line x1="300" y1="66" x2="376" y2="66" stroke-width="2.2"/>
+  <g stroke-width="2.2">
+    <path d="M384 76 q14 -8 24 0 q6 5 2 12 q-10 6 -22 2 q-8 -6 -4 -14 Z"/>
+    <path d="M396 108 q12 -6 20 2 q5 6 0 12 q-10 4 -18 0 q-6 -7 -2 -14 Z"/>
+    <path d="M382 140 q10 -5 18 2 q5 5 1 10 q-9 4 -16 0 q-6 -6 -3 -12 Z"/>
+  </g>
+  <!-- 飞页轨迹 -->
+  <path d="M376 92 q14 8 16 22" stroke-width="1.8" stroke-dasharray="3 5"/>
+  <path d="M376 126 q12 8 12 20" stroke-width="1.8" stroke-dasharray="3 5"/>
+</svg>

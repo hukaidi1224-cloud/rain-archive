@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" fill="none" stroke="#232a27" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 框一：螺旋（划去） -->
+  <rect x="20" y="20" width="110" height="130"/>
+  <path d="M75 85 a9 9 0 1 1 -9 -9 a18 18 0 1 1 18 18 a27 27 0 1 1 -27 -27 a35 35 0 1 1 35 35" stroke-width="2.6"/>
+  <line x1="30" y1="32" x2="120" y2="140" stroke-width="3.4"/>
+  <line x1="120" y1="32" x2="30" y2="140" stroke-width="3.4"/>
+  <!-- 框二：涡旋（划去） -->
+  <rect x="145" y="20" width="110" height="130"/>
+  <path d="M200 100 a32 32 0 1 1 32 -32" stroke-width="2.6"/>
+  <path d="M200 84 a16 16 0 1 1 16 -16" stroke-width="2.6"/>
+  <path d="M232 68 q14 10 10 28" stroke-width="2.6"/>
+  <line x1="155" y1="32" x2="245" y2="140" stroke-width="3.4"/>
+  <line x1="245" y1="32" x2="155" y2="140" stroke-width="3.4"/>
+  <!-- 框三：浪（划去） -->
+  <rect x="270" y="20" width="110" height="130"/>
+  <path d="M280 110 q11 -20 22 0 t22 0 t22 0 t22 0" stroke-width="2.6"/>
+  <path d="M302 90 q4 -16 20 -18" stroke-width="2.6"/>
+  <line x1="280" y1="32" x2="370" y2="140" stroke-width="3.4"/>
+  <line x1="370" y1="32" x2="280" y2="140" stroke-width="3.4"/>
+  <!-- 框四：云与尾（划去） -->
+  <rect x="82" y="175" width="110" height="130"/>
+  <path d="M108 226 a12 12 0 0 1 12 -12 a14 14 0 0 1 26 -4 a12 12 0 0 1 18 16" stroke-width="2.6"/>
+  <path d="M108 226 q-4 22 10 34 q12 10 4 24" stroke-width="2.6"/>
+  <line x1="92" y1="187" x2="182" y2="293" stroke-width="3.4"/>
+  <line x1="182" y1="187" x2="92" y2="293" stroke-width="3.4"/>
+  <!-- 框五：雨绕开中心（未划去） -->
+  <rect x="207" y="175" width="110" height="130"/>
+  <g stroke-width="2.6">
+    <path d="M222 184 L214 214 Q212 226 224 230"/>
+    <path d="M240 184 L234 208 Q232 220 244 224"/>
+    <path d="M258 184 L254 202 Q253 212 262 215"/>
+    <path d="M276 184 L273 199"/>
+    <path d="M300 184 L294 208 Q292 220 280 224"/>
+    <path d="M214 296 L222 268 Q225 256 236 252"/>
+    <path d="M236 296 L241 274 Q244 262 254 258"/>
+    <path d="M258 296 L260 282"/>
+    <path d="M300 296 L294 272 Q292 260 280 256"/>
+    <path d="M314 296 L308 268 Q306 256 296 252"/>
+  </g>
+  <!-- 中心：空白 -->
+  <circle cx="268" cy="240" r="18" stroke-width="1.8" stroke-dasharray="5 6" opacity="0.7"/>
+</svg>

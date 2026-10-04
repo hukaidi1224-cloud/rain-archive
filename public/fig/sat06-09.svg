@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" fill="none" stroke="#232a27" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 命名表：回到原处 -->
+  <rect x="60" y="44" width="280" height="140"/>
+  <line x1="130" y1="44" x2="130" y2="184"/>
+  <line x1="200" y1="44" x2="200" y2="184"/>
+  <line x1="270" y1="44" x2="270" y2="184"/>
+  <line x1="60" y1="114" x2="340" y2="114"/>
+  <g stroke-width="2.2">
+    <rect x="68" y="52" width="54" height="54"/><path d="M74 72 q7 -7 14 0 q7 7 14 0"/><path d="M76 88 q8 -5 16 0"/>
+    <rect x="138" y="52" width="54" height="54"/><path d="M144 74 q7 -7 14 0 q7 7 14 0"/><path d="M146 88 q8 -5 16 0"/>
+    <rect x="278" y="52" width="54" height="54"/><path d="M284 72 q7 -7 14 0 q7 7 14 0"/><path d="M286 88 q8 -5 16 0"/>
+    <rect x="68" y="122" width="54" height="54"/><path d="M74 142 q7 -7 14 0 q7 7 14 0"/><path d="M76 158 q8 -5 16 0"/>
+    <rect x="138" y="122" width="54" height="54"/><path d="M144 144 q7 -7 14 0 q7 7 14 0"/><path d="M146 158 q8 -5 16 0"/>
+    <rect x="278" y="122" width="54" height="54"/><path d="M284 142 q7 -7 14 0 q7 7 14 0"/><path d="M286 158 q8 -5 16 0"/>
+  </g>
+  <!-- 空格：200,52 54x54 空着 -->
+  <!-- 雨从画框外进来，朝向空格 -->
+  <g stroke-width="2.6">
+    <path d="M8 60 Q40 66 66 78"/>
+    <path d="M4 96 Q44 98 72 102"/>
+    <path d="M12 130 Q48 124 70 116"/>
+    <path d="M392 64 Q356 70 330 82"/>
+    <path d="M396 100 Q352 102 324 106"/>
+    <path d="M388 136 Q350 128 326 118"/>
+    <path d="M188 4 Q196 24 202 46"/>
+    <path d="M216 2 Q220 24 222 46"/>
+    <path d="M244 8 Q244 28 240 46"/>
+    <path d="M172 210 Q180 192 190 186"/>
+    <path d="M246 212 Q238 194 232 188"/>
+  </g>
+  <!-- 空格上方悬停的雨点 -->
+  <circle cx="206" cy="34" r="2.4" fill="#232a27" stroke="none"/>
+  <circle cx="228" cy="28" r="2.4" fill="#232a27" stroke="none"/>
+  <!-- 末尾空框 -->
+  <rect x="140" y="252" width="120" height="56" stroke-width="2.8"/>
+  <g stroke-width="2.2">
+    <line x1="158" y1="240" x2="146" y2="272"/>
+    <line x1="200" y1="236" x2="188" y2="268"/>
+    <line x1="242" y1="240" x2="230" y2="272"/>
+  </g>
+</svg>
